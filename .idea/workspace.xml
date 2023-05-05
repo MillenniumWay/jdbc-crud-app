@@ -1,35 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="jdbc-crud-app:war" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d075767f-5e22-4689-af7a-5d8a5671f4d0" name="Changes" comment="Commit">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/create.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/inserts.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Connection/ConnectionManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Connection/PropertiesUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DAO_LAYERS/ClientsDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DAO_LAYERS/DoctorDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DAO_LAYERS/HospitalDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DAO_LAYERS/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Models/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Models/Doctor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Models/Hospital.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Models/UserBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Runs/RunAllMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/app.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DTO_LAYERS/CreateUserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DTO_LAYERS/UserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entity/Gender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Entity/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Filters/CharSetFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Hibernate/Entity/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Hibernate/Entity/Doctor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Hibernate/Entity/Hospital.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Hibernate/HibernateDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Hibernate/Runner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Mappers/CreateUserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Mappers/Mapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Models/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Service/ClientService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Service/HospitalService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Servlets/CheckCookiesServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Servlets/DeleteCookieServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Servlets/IndexServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Servlets/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Servlets/PostgresServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Servlets/RegistrationServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Utils/JSPHELPER.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/logout.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/registration.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/table.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Connection/ConnectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Connection/ConnectionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO_LAYERS/ClientsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO_LAYERS/ClientsDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO_LAYERS/HospitalDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO_LAYERS/HospitalDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO_LAYERS/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO_LAYERS/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Models/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Models/UserBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/UserBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Runs/RunAllMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Runs/RunAllMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,12 +59,22 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
+        <option value="Jsp File" />
+        <option value="CSS File" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -57,23 +87,32 @@
     </option>
   </component>
   <component name="ProjectId" id="2OEYGZ55vT7XdbrtohcIIvs5PaL" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "JPA.DatabaseSchemaImportDialog": "c25f146c-f716-4bcb-9d52-f549845c4685",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "database.data.extractors.current.export.id": "SQL Inserts",
-    "last_opened_file_path": "C:/Users/quali/BooksSQL",
+    "last_opened_file_path": "C:/Users/quali/jdbc-crud-app/src/main/resources",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.28390804",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -85,14 +124,22 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\quali\jdbc-crud-app\src\main\resources" />
+      <recent name="C:\Users\quali\jdbc-crud-app\src\main\webapp" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\quali\jdbc-crud-app\src\main\webapp\Копия Site1" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="DAO_LAYERS" />
       <recent name="Connection" />
+      <recent name="Entity" />
+      <recent name="DAO_LAYERS" />
       <recent name="Models" />
     </key>
+    <key name="ImportMappingsDialog.RecentPackages">
+      <recent name="Hibernate.Entity" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Runner">
     <configuration name="RunAllMethods" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Runs.RunAllMethods" />
       <module name="jdbc-crud-app" />
@@ -106,8 +153,114 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Hibernate.Runner" />
+      <module name="jdbc-crud-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Hibernate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 10.1.7" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.7" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="jdbc-crud-app:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="5c090522-f765-465f-b932-f4bb37381afe" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="63447" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="jdbc-crud-app:war" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Runner" />
+      <item itemvalue="Application.RunAllMethods" />
+      <item itemvalue="Tomcat Server.Tomcat 10.1.7" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Runner" />
         <item itemvalue="Application.RunAllMethods" />
       </list>
     </recent_temporary>
@@ -125,15 +278,57 @@
       <workItem from="1681138322241" duration="7570000" />
       <workItem from="1681207224361" duration="3353000" />
       <workItem from="1681227356178" duration="13904000" />
-      <workItem from="1681289317517" duration="4310000" />
+      <workItem from="1681289317517" duration="4733000" />
+      <workItem from="1681328088528" duration="644000" />
+      <workItem from="1681565197003" duration="5653000" />
+      <workItem from="1681583121691" duration="797000" />
+      <workItem from="1681742602589" duration="1321000" />
+      <workItem from="1681846276647" duration="2272000" />
+      <workItem from="1681989859109" duration="2724000" />
+      <workItem from="1682019976981" duration="6018000" />
+      <workItem from="1682030943732" duration="608000" />
+      <workItem from="1682049186699" duration="2798000" />
+      <workItem from="1682163594048" duration="30000" />
+      <workItem from="1682166350205" duration="12207000" />
+      <workItem from="1682243583661" duration="12309000" />
+      <workItem from="1682267997461" duration="3698000" />
+      <workItem from="1682327382771" duration="13874000" />
+      <workItem from="1682351631889" duration="5746000" />
+      <workItem from="1682358111621" duration="534000" />
+      <workItem from="1682358661618" duration="1057000" />
+      <workItem from="1682418401365" duration="10624000" />
+      <workItem from="1682499843344" duration="177000" />
+      <workItem from="1682526696008" duration="1222000" />
+      <workItem from="1682592182575" duration="4826000" />
+      <workItem from="1682760121112" duration="568000" />
+      <workItem from="1683315889042" duration="4346000" />
     </task>
+    <task id="LOCAL-00001" summary="Commit">
+      <created>1681294266698</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1681294266698</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Commit" />
     <option name="LAST_COMMIT_MESSAGE" value="Commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.RuntimeException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

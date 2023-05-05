@@ -1,7 +1,6 @@
 package DAO_LAYERS;
 import Connection.ConnectionManager;
 import Models.Client;
-import org.postgresql.jdbc2.ArrayAssistant;
 import org.postgresql.util.PSQLException;
 
 import java.sql.*;
@@ -32,18 +31,15 @@ public class ClientsDAO {
         return connection;
     }
 
-    public void insertIntoClients(String first_name, String last_name,
-                                  String passport_num, String code_of_diagnose,
-                                  String  date_entry, int fk_doctor_id)  throws SQLException{
-
+    public void insertIntoClients(Client client)  throws SQLException{
         try (Connection connection = getConnection();) {
             PreparedStatement preparedStatement = connection.prepareStatement(INSERT_INTO_CLIENT);
-             preparedStatement.setString(1, first_name);
-             preparedStatement.setString(2, last_name);
-             preparedStatement.setString(3, passport_num);
-             preparedStatement.setString(4, code_of_diagnose);
-             preparedStatement.setDate(5, Date.valueOf(date_entry));
-             preparedStatement.setInt(6, fk_doctor_id);
+             preparedStatement.setString(1, client.getFirst_name());
+             preparedStatement.setString(2, client.getLast_name());
+             preparedStatement.setString(3, client.getPassport_num());
+             preparedStatement.setString(4, client.getCode_of_diagnose());
+             preparedStatement.setDate(5, Date.valueOf(client.getDate_entry()));
+             preparedStatement.setInt(6, client.getFk_doctor_id());
              preparedStatement.executeUpdate();
         } catch (SQLException e) {
             throw new RuntimeException(e);
@@ -89,7 +85,7 @@ public class ClientsDAO {
             preparedStatement.setString(2, client.getLast_name());
             preparedStatement.setString(3,client.getPassport_num());
             preparedStatement.setString(4,client.getCode_of_diagnose());
-            preparedStatement.setDate(5,client.getDate_entry());
+            preparedStatement.setString(5,client.getDate_entry());
             preparedStatement.setInt(6, client_id);
             preparedStatement.executeUpdate();
         }

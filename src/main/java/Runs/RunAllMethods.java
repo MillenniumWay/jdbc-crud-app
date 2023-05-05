@@ -3,6 +3,8 @@ package Runs;
 import DAO_LAYERS.ClientsDAO;
 import DAO_LAYERS.DoctorDAO;
 import DAO_LAYERS.HospitalDAO;
+import DAO_LAYERS.UserDAO;
+import Models.UserBean;
 import com.github.javafaker.Faker;
 
 import java.text.SimpleDateFormat;
@@ -16,6 +18,7 @@ public class RunAllMethods {
         HospitalDAO hospitalDAO = new HospitalDAO();
         ClientsDAO clientsDAO = new ClientsDAO();
         DoctorDAO doctorDAO = new DoctorDAO();
+        UserDAO userDAO  = new UserDAO();
 
         Faker faker = new Faker();
         String firstName = faker.name().firstName();
@@ -26,7 +29,7 @@ public class RunAllMethods {
         String fakecode = faker.code().ean8();
         String fakecode2 = faker.code().ean8();
         String VERY_IMPORTANT_INFORMATION = faker.chuckNorris().fact();
-
+        userDAO.findByEmailAndPassword("fake@gmail.com","123123");
 
         for (int a = 0; a < 10; a++) {
             // INSERT CODE HERE TO DUPLICATE ANY OPTIONS
@@ -42,7 +45,8 @@ public class RunAllMethods {
         //  doctorDAO.insertIntoDoctor(5, firstName, lastName, pokemon);
 
         //  Добавление клиента
-        //  clientsDAO.insertIntoClients(firstName,lastName,fakecode,fakecode2,"2009-10-10",10);
+
+     //    clientsDAO.insertIntoClients(firstName,lastName,fakecode,fakecode2,"2010-10-10",10);
 
 
         // Получить список всех больниц
@@ -84,6 +88,8 @@ public class RunAllMethods {
         //  Полное удаление врачей / клиентов / больниц
         //  hospitalDAO.turncateFromHospital();
 
+        System.out.println(      hospitalDAO.selectById(1)
+);
 
         System.out.println(VERY_IMPORTANT_INFORMATION);
     }

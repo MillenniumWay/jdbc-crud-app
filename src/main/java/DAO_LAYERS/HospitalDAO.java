@@ -12,6 +12,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HospitalDAO {
+    private static final HospitalDAO INSTANCE = new HospitalDAO();
+
 
     private final String INSERT_INTO_HOSPITAL = "INSERT INTO hospital " + "(name_hospital, specialisation) VALUES" +
             "(?,?);";
@@ -111,7 +113,12 @@ public class HospitalDAO {
             e.printStackTrace();
         }
         }
-   }
+
+    public static HospitalDAO getInstance() {
+        return INSTANCE;
+    }
+
+}
 
 
 
