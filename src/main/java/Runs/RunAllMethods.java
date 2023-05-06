@@ -29,6 +29,10 @@ public class RunAllMethods {
         String fakecode = faker.code().ean8();
         String fakecode2 = faker.code().ean8();
         String VERY_IMPORTANT_INFORMATION = faker.chuckNorris().fact();
+
+        System.out.println(firstName);
+        System.out.println(firstName);
+
         userDAO.findByEmailAndPassword("fake@gmail.com","123123");
 
         for (int a = 0; a < 10; a++) {
@@ -88,7 +92,7 @@ public class RunAllMethods {
         //  Полное удаление врачей / клиентов / больниц
         //  hospitalDAO.turncateFromHospital();
 
-        System.out.println(      hospitalDAO.selectById(1)
+        System.out.println(hospitalDAO.selectById(1)
 );
 
         System.out.println(VERY_IMPORTANT_INFORMATION);

@@ -41,6 +41,25 @@ public class Client {
     @JoinColumn(name = "fk_doctor_id", referencedColumnName = "doctor_id", nullable = false, insertable = false, updatable = false)
     private Doctor doctorByFkDoctorId;
 
+    public Client(String firstName, String lastName, String passportNum, String codeOfDiagnose, Date dateEntry, int fkDoctorId) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.passportNum = passportNum;
+        this.codeOfDiagnose = codeOfDiagnose;
+        this.dateEntry = dateEntry;
+        this.fkDoctorId = fkDoctorId;
+    }
 
-
+    @Override
+    public String toString() {
+        return "Client{" +
+                "clientId=" + clientId +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", passportNum='" + passportNum + '\'' +
+                ", codeOfDiagnose='" + codeOfDiagnose + '\'' +
+                ", dateEntry=" + dateEntry +
+                ", fkDoctorId=" + fkDoctorId +
+                '}';
+    }
 }

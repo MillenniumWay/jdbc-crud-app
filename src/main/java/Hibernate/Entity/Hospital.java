@@ -32,5 +32,14 @@ public class Hospital {
         this.nameHospital = nameHospital;
         this.specialisation = specialisation;
     }
+
+    @Override
+    public String toString() {
+        return "Hospital{" +
+                "idHospital=" + idHospital +
+                ", nameHospital='" + nameHospital + '\'' +
+                ", specialisation='" + specialisation + '\'' +
+                '}';
+    }
 }
 

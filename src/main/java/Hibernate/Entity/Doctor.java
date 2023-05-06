@@ -1,6 +1,7 @@
 package Hibernate.Entity;
 
 import lombok.*;
+import org.hibernate.annotations.BatchSize;
 
 import javax.persistence.*;
 
@@ -13,6 +14,7 @@ import javax.persistence.*;
 @Getter
 @Setter
 @EqualsAndHashCode
+@BatchSize(size = 10)
 public class Doctor {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
@@ -49,5 +51,16 @@ public class Doctor {
         this.firstName = firstName;
         this.lastName = lastName;
         this.speciality = speciality;
+    }
+
+    @Override
+    public String toString() {
+        return "Doctor{" +
+                "doctor_id=" + doctor_id +
+                ", hospitalId=" + hospitalId +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", speciality='" + speciality + '\'' +
+                '}';
     }
 }
