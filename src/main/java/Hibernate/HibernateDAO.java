@@ -16,12 +16,14 @@ public class HibernateDAO {
         try {
             session.beginTransaction();
           var var_hospital =  session.createQuery("FROM Hospital", Hospital.class).list();
-          for (Hospital hospital1: var_hospital) {
-              System.out.println(hospital1.toString());
-          }
+              for (Hospital hospital1: var_hospital) {
+                System.out.println(hospital1.toString());
+              }
         } catch (Exception e) {e.printStackTrace();}
     return hospital;
     }
+
+
     public Doctor hqlReadFromDoctor(Session session, Doctor doctor) {
         try {
             session.beginTransaction();
@@ -63,6 +65,7 @@ public class HibernateDAO {
             session.close();
         } catch (Exception exception) {exception.printStackTrace();}
     }
+
     public void hqlAddToHospitalEntity (Session session, Hospital hospital) {
         try {
             session.beginTransaction();

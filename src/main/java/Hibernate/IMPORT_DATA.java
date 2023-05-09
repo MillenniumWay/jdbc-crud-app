@@ -20,10 +20,10 @@ public class IMPORT_DATA {
         Configuration configuration = new Configuration();
         configuration.configure();
         try (SessionFactory sessionFactory = configuration.buildSessionFactory();
-        Session session = sessionFactory.openSession()){
-            session.beginTransaction();
-            importData(sessionFactory);
-            session.close();
+             Session session = sessionFactory.openSession()){
+             session.beginTransaction();
+             importData(sessionFactory);
+             session.close();
         }
     }
 

@@ -10,17 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d075767f-5e22-4689-af7a-5d8a5671f4d0" name="Changes" comment="Commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Hibernate/IMPORT_DATA.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Hibernate/SQLInsert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DTO_LAYERS/HospitalDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Utils/HibernateUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Hibernate/Entity/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hibernate/Entity/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Hibernate/Entity/Doctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hibernate/Entity/Doctor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Hibernate/Entity/Hospital.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hibernate/Entity/Hospital.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Hibernate/HibernateDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hibernate/HibernateDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Hibernate/IMPORT_DATA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hibernate/IMPORT_DATA.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Hibernate/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hibernate/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Runs/RunAllMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Runs/RunAllMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +73,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;database.data.extractors.current.export.id&quot;: &quot;SQL Inserts&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/quali/jdbc-crud-app/src/main/resources&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/quali/Task10&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -113,33 +109,7 @@
       <recent name="Hibernate.Entity" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="IMPORT_DATA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Hibernate.IMPORT_DATA" />
-      <module name="jdbc-crud-app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Hibernate.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RunAllMethods" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Runs.RunAllMethods" />
-      <module name="jdbc-crud-app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Runs.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.Runner.addToDoctor">
     <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Hibernate.Runner" />
       <module name="jdbc-crud-app" />
@@ -153,14 +123,63 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Runner.addToDoctor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jdbc-crud-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Hibernate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Hibernate" />
+      <option name="MAIN_CLASS_NAME" value="Hibernate.Runner" />
+      <option name="METHOD_NAME" value="addToDoctor" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Runner.readAllFromClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jdbc-crud-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Hibernate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Hibernate" />
+      <option name="MAIN_CLASS_NAME" value="Hibernate.Runner" />
+      <option name="METHOD_NAME" value="readAllFromClient" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Runner.readAllFromDoctor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jdbc-crud-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Hibernate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Hibernate" />
+      <option name="MAIN_CLASS_NAME" value="Hibernate.Runner" />
+      <option name="METHOD_NAME" value="readAllFromDoctor" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat: jdbc-crud-app" type="com.poratu.idea.plugins.tomcat" temporary="true">
-      <predefined_log_file enabled="true" id="Tomcat Localhost Log" />
-      <predefined_log_file enabled="true" id="Tomcat Access Log" />
+      <log_file checked="false" alias="Tomcat Localhost Log" path="$PROJECT_DIR$/../.SmartTomcat/jdbc-crud-app/jdbc-crud-app/logs/localhost.*" />
+      <log_file checked="false" alias="Tomcat Access Log" path="$PROJECT_DIR$/../.SmartTomcat/jdbc-crud-app/jdbc-crud-app/logs/localhost_access_log.*" />
       <predefined_log_file id="Tomcat Catalina Log" />
       <predefined_log_file id="Tomcat Manager Log" />
       <predefined_log_file id="Tomcat Host Manager Log" />
       <option name="contextPath" value="/jdbc-crud-app" />
       <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
+      <option name="extraClassPath" value="" />
       <option name="tomcatInfo">
         <TomcatInfo>
           <option name="name" value="Apache Tomcat/10.1.7" />
@@ -168,22 +187,25 @@
           <option name="version" value="10.1.7.0" />
         </TomcatInfo>
       </option>
+      <option name="vmOptions" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.IMPORT_DATA" />
       <item itemvalue="Application.Runner" />
-      <item itemvalue="Application.RunAllMethods" />
+      <item itemvalue="JUnit.Runner.addToDoctor" />
+      <item itemvalue="JUnit.Runner.readAllFromClient" />
+      <item itemvalue="JUnit.Runner.readAllFromDoctor" />
       <item itemvalue="Smart Tomcat.Tomcat: jdbc-crud-app" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Runner.addToDoctor" />
+        <item itemvalue="JUnit.Runner.readAllFromDoctor" />
+        <item itemvalue="JUnit.Runner.readAllFromClient" />
         <item itemvalue="Smart Tomcat.Tomcat: jdbc-crud-app" />
         <item itemvalue="Application.Runner" />
-        <item itemvalue="Application.IMPORT_DATA" />
-        <item itemvalue="Application.RunAllMethods" />
       </list>
     </recent_temporary>
   </component>
@@ -224,7 +246,10 @@
       <workItem from="1682592182575" duration="4826000" />
       <workItem from="1682760121112" duration="568000" />
       <workItem from="1683315889042" duration="4564000" />
-      <workItem from="1683368701865" duration="9159000" />
+      <workItem from="1683368701865" duration="12766000" />
+      <workItem from="1683458294020" duration="2352000" />
+      <workItem from="1683476211017" duration="169000" />
+      <workItem from="1683639899635" duration="1785000" />
     </task>
     <task id="LOCAL-00001" summary="Commit">
       <created>1681294266698</created>
@@ -240,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683320470621</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Commit">
+      <created>1683381085467</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683381085467</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
