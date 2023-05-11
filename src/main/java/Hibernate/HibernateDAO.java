@@ -46,8 +46,36 @@ public class HibernateDAO {
         return client;
     }
 
+    public void hqlReadBuIdHospital (Session session, Long id) {
+        try {
+            session.beginTransaction();
+            Hospital hospital = session.get(Hospital.class, id);
+            System.out.println(hospital.toString());
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
 
+        public void hqlReadByIdClient (Session session, Long id){
+            try {
+                session.beginTransaction();
+                Client client = session.get(Client.class, id);
+                System.out.println(client.toString());
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        }
 
+            public void hqlReadByIdDoctor(Session session, Long id) {
+                try {
+                    session.beginTransaction();
+                    Doctor doctor = session.get(Doctor.class, id);
+                    System.out.println(doctor.toString());
+                } catch (Exception e) {
+                    throw new RuntimeException(e);
+                }
+
+    }
 
     public void hqlAddToClientEntity (Session session, Client client) {
         try {

@@ -42,15 +42,51 @@ public class Runner {
     }
 
     @Test
+     public void byIdHospital () {
+        @Cleanup Session session = sessionFactory.openSession();
+        hibernate.hqlReadBuIdHospital(session, 1L);
+        session.close();
+    }
+    @Test
+    public void byDoctorId () {
+        @Cleanup Session session = sessionFactory.openSession();
+        hibernate.hqlReadByIdDoctor(session, 1L);
+        session.close();
+    }
+    @Test
+    public void byClientId () {
+        @Cleanup Session session = sessionFactory.openSession();
+        hibernate.hqlReadByIdClient(session, 1L);
+        session.close();
+    }
+
+   @Test
+     public void addToHospital () {
+     @Cleanup Session session = sessionFactory.openSession();
+     Hospital addNewHospital = new Hospital("Hibernate","Programming");
+     hibernate.hqlAddToHospitalEntity(session, new Hospital(addNewHospital.getNameHospital(), addNewHospital.getSpecialisation()));
+     session.close();
+
+}
+
+@Test
+public void addToClient () {
+    @Cleanup Session session = sessionFactory.openSession();
+    Client addNewClient = new Client("David",
+            "Frank","324341","A1-F",new Date(10-01-2001),1);
+    hibernate.hqlAddToClientEntity(session, new Client(addNewClient.getFirstName(), addNewClient.getLastName(),
+            client.getPassportNum(), addNewClient.getCodeOfDiagnose(), addNewClient.getDateEntry(), addNewClient.getFkDoctorId()));
+    session.close();
+}
+
+    @Test
     public void addToDoctor() {
         @Cleanup Session session = sessionFactory.openSession();
         Doctor addNewDoctor = new Doctor(1,"David","Hibernate", "JavaDev");
         hibernate.hqlAddToDoctorEntity(session, new Doctor(addNewDoctor.getHospitalId(),
                 addNewDoctor.getFirstName(),addNewDoctor.getLastName(), addNewDoctor.getSpeciality()));
-        session.getTransaction().commit();
+        session.close();
     }
-
-
 
 
 
